@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Parcial 2</title>
+ <link rel="stylesheet" href="css/styles.css" >
+</head>
+<body>
+ <div class="product-image">
+
+ </div>
+ <div class="product-details">
+ <div class="product-details-content">
+ <h2>Celulares</h2>
+ <form action="">
+ <div class="form-control">
+ <label>Color</label>
+ <select onchange="changeProductImage()">
+ <option disabled selected value="0"> -- Seleccione una
+opción -- </option>
+ <option value="grafito">Grafito</option>
+ <option value="sierra">Sierra</option>
+ <option value="silver">Silver</option>
+ <option value="gold">Gold</option>
+ </select>
+ </div>
+ <div class="form-control">
+ <label>Capacidad</label>
+ <select>
+ <option disabled selected value="0"> -- Seleccione una
+opción -- </option>
+ <option value="128 GB">128 GB</option>
+ <option value="256 GB">256 GB</option>
+ <option value="512 GB"> 512 GB</option>
+ </select>
+ </div>
+ <div class="form-control">
+ <label>Cantidad</label>
+ <input type="text" />
+ </div>
+ <div class="form-control">
+ <button type="button"
+onclick="calculatePrice()">Cotizar</button>
+ </div>
+ <div id="result" class="form-control">
+ Resultado cotización o error
+ </div>
+ </form>
+ </div>
+ </div>
+</body>
+</html>
